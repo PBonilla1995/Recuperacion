@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+<script src="/static/js/index.js"></script>
+<title>EMBEBIDOS</title>
+</head>
+<body>
+
+<h1 style="color:rgb(241, 8, 8);">Manejo de sensores</h1>
+<img src="/static/images/iot.png"  alt="user">
+<br></br>
+<p style="color: green;">Ingrese Prueba123 para visualizar el estado de los LED's</p>
+<input type="text" id="pass"value="Ingrese la clave" onchange="MostarClave()"/>
+<button id="Change" onclick="ChangePass()">Cambiar Clave</button > 
+<br></br>
+
+<input type="text" id="passV"value="Clave Actual"/>
+<input type="text" id="passA"value="Nueva Clave"/>
+<button id="NewPass" onclick="ActuPass()">Aceptar</button>
+
+<h1 style="color:blue;">MI Led1-></h><h id="LED_1"></h1>
+<h1 style="color:blue;">MI Led2-></h><h id="LED_2"></h1>
+<h1 style="color:darksalmon;">Historial de los LED -------></h><button id="Clave" onclick="MostarDatos()">Abrir</button>
+	
+<pre id="Historial"></pre>
+</body>
+</html>
+
